@@ -77,3 +77,12 @@ body, html {
   object-fit: contain;
   /* filter: drop-shadow(0 0 15px #00ffffa0); */
 }
+
+@media (hover: none) and (pointer: coarse) {
+  /* Disable hover glow on touch devices */
+  .pokemon-card:hover .glow {
+    opacity: 0 !important;
+    transform: none !important;
+  }
+}
+
