@@ -1,11 +1,22 @@
-body {
+/* Make body full viewport size and center content */
+body, html {
+  height: 100vh;
+  width: 100vw;
   margin: 0;
-  overflow: hidden;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  background-color: #000; /* or your preferred background */
+  overflow: hidden; /* optional: prevent scrolling */
 }
 
+/* Optional: make sure the container doesn’t shrink */
 .halo-wrapper {
-  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .pokemon-card {
   position: relative;
